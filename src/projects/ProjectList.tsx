@@ -6,5 +6,7 @@ interface ProjectListProps {
 }
 
 function ProjectList({ projects }: ProjectListProps) {
-  return <pre> </pre>
+  return <pre>{JSON.stringify(projects, null, ' ')}</pre>
 }
+
+export default ProjectList;
