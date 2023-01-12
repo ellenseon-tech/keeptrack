@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
+import ProjectsPage from './projects/ProjectsPage';
 
 function App() {
   return (
-    <blockquote cite="Benjamin Franklin">
-      Tell me and I forget, teach me and I may remember, imvolve me and I learn.
-    </blockquote>
+    <div className="container">
+      <ProjectsPage />
+    </div>
   );
 }
 
