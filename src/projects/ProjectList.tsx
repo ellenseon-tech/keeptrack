@@ -6,7 +6,16 @@ interface ProjectListProps {
 }
 
 function ProjectList({ projects }: ProjectListProps) {
-  return <pre>{JSON.stringify(projects, null, ' ')}</pre>
+    return (
+        <ul className="row">
+            {
+                projects.map((project) => (
+                    <li key={project.id}>{project.name}</li>
+                ))
+            }
+
+        </ul>
+    )
 }
 
 export default ProjectList;
